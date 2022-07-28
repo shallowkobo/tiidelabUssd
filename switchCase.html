@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       alert("Welcome to Access Bank Ussd Application");
+       
+       const choice = prompt(`"              1:Check Balance 
+                             2:Transfer 
+                             3:Airtime 
+                             4:Other Services 
+                             5:Access More 
+                             6: Diamond Xtra 
+                             7: XtraCash Loan 
+                             8: Mobile Wallet"`);
+
+       switch (choice) {
+  case "1":
+  if (choice == 1){
+            alert("CHECK BALANCE")
+            confirmation = confirm("Choose 1:Accept 2:Cancel")
+            
+            if (confirmation == 1){
+                alert("You choose 1: Hence Accept");
+                alert("Your Balance is NGN100,000");
+            }
+            else{
+                alert("You choose 2: Hence cancelled");
+            }
+        }
+    break;
+  case "2":
+  if (choice == 2){
+            alert("TRANSFER");
+            confirmation = confirm("Choose 1:OK 2:Cancel")
+            if (confirmation == 1){
+                alert(`You choose 1:OK`);
+                account = alert("Input Account Number to transfer to: ");
+                account = prompt()
+                account = Number(account);
+                alert("The account number is" + account);
+                amount = prompt("How much are you transferring? ")
+                amount = Number(amount);
+                alert(`You are transferring,${amount} naira`);
+                amountConfirm = confirm("Choose 1:Accept 2:Cancel")
+                if (amountConfirm == 1){
+                    alert(`You are transferring ${amount} naira to ${account}`)
+                    alert('Thanks for banking with us.')
+                }
+                else{
+                    alert('You cancelled the transfer to the account')
+                }
+            }
+            else{
+                alert("You choose 2")
+                alert("Hence you cancelled the transfer");
+                alert('Thanks for banking with us.');
+            }
+        }
+    break;
+  case "3":
+  if (choice == 3){
+            alert("AIRTIME");
+            denomination = prompt("How much airtime are you loading?");
+            denomination = Number(denomination);
+            alert(`You are loading ${denomination} Naira`);
+            alert("Thanks for loading with us.")
+            }
+    break;
+  case "4":
+  if (choice == 4){
+            alert("OTHER SERVICES");
+            alert(`Not available at the moment.`);
+            alert("Thanks for banking with us.");
+            }
+    break;
+  case "5":
+  if (choice == 5){
+            alert("ACCESS MORE");
+            alert(`Coming to a bank near you.`);
+            alert("Thanks for banking with us.")
+            }
+    break;
+  case "6":
+  if (choice == 6){
+            alert("DIAMONE XTRA");
+            alert(`Also coming to a bank near you.`);
+            alert("Thanks for banking with us.")
+            }
+    break;
+  case "7":
+  if (choice == 7){
+            alert("XTRACASH LOAN");
+            alert(`Contact you Account Manager for more details.`);
+            alert("Thanks for banking with us.")
+            }
+    break;
+  case "8":
+  if (choice == 8){
+            alert("Mobile Wallet");
+            alert(`Features not available at the moment.`);
+            alert("Thanks for banking with us.")
+            }
+    break;
+  default:
+            alert("TRANSACTION ENDS.")
+            alert("Thank you for banking with us.")
+    break;
+}
+       
+    </script>
+</body>
+</html>
